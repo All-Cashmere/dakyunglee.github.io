@@ -17,14 +17,19 @@
 
  	<!-- CSS
    ================================================== -->
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
    <link rel="stylesheet" href="css/base.css">  
    <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/vendor.css">     
+   <link rel="stylesheet" href="css/vendor.css">
+
 
    <!-- script
    ================================================== -->   
 	<script src="js/modernizr.js"></script>
 	<script src="js/pace.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
    <!-- favicons
 	================================================== -->
@@ -46,7 +51,7 @@
 		         <a href="index.html">Dakyung Lee</a>
 		      </div>		      
 
-		   	<nav id="main-nav-wrap">
+		   	<nav class>
 					<ul class="main-navigation">
 						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
 						<li><a class="smoothscroll"  href="#about" title="">About</a></li>
@@ -73,12 +78,12 @@
 
    			<div class="col-twelve">
 
-	   			<h5>Hello, World.</h5>
+	   			<h5>Hello,</h5>
 	   			<h1>I'm Dakyung Lee.</h1>
 
 	   			<p class="intro-position">
-	   				<span>Front-end Developer</span>
-	   				<span>UI/UX Designer</span> 
+	   				<span>Computer Programmer</span>
+						<span>Web Designer</span>
 	   			</p>
 
 	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
@@ -89,11 +94,8 @@
    	</div> <!-- /intro-content --> 
 
    	<ul class="intro-social">        
-         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-         <li><a href="#"><i class="fa fa-behance"></i></a></li>
-         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-         <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-         <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+         <li><a href="https://www.github.com/all-cashmere"><i class="fa fa-github"></i></a></li>
+         <li><a href="https://www.linkedin.com/in/dakyung-lee-97aa26126/"><i class="fa fa-linkedin"></i></a></li>
       </ul> <!-- /intro-social -->      	
 
    </section> <!-- /intro -->
@@ -113,7 +115,7 @@
 
    				<img src="images/profile-pic.jpg" alt="Profile Picture">
 
-   				<p class="lead">Lorem ipsum Exercitation culpa qui dolor consequat exercitation fugiat laborum ex ea eiusmod ad do aliqua occaecat nisi ad irure sunt id pariatur Duis laboris amet exercitation veniam labore consectetur ea id quis eiusmod.</p>
+   				<p class="lead">My name is Dakyung, Diana for those who want to call my name easily. I love to communicate with people and learn something new everyday.</p>
    			</div>   			
 
    		</div>   		
@@ -124,7 +126,7 @@
    		<div class="col-six tab-full">
 
    			<h3>Profile</h3>
-   			<p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p>
+   			<p>A student who studies Computer Programming Analyst at George Brown College. I love to learn new programming languages and design websites.</p>
 
    			<ul class="info-list">
    				<li>
@@ -137,11 +139,12 @@
    				</li>
    				<li>
    					<strong>Job:</strong>
-   					<span>Frontend Developer</span>
+   					<span>Computer Programmer</span>
+						<span>Web Designer</span>
    				</li>
    				<li>
    					<strong>Website:</strong>
-   					<span>www.kardswebsite.com</span>
+   					<span>https://all-cashmere.github.io/dakyunglee.github.io/</span>
    				</li>
    				<li>
    					<strong>Email:</strong>
@@ -154,31 +157,22 @@
 
    		<div class="col-six tab-full">
 
-   			<h3>Skills</h3>
-   			<p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p>
+   			<h3>Technical Skills</h3>
 
-				<ul class="skill-bars">
-				   <li>
-				   	<div class="progress percent90"><span>90%</span></div>
-				   	<strong>HTML5</strong>
+				<ul class="list-group list-group-flush" style="font-family:lora-regular;">
+				   <li class="list-group-item">
+					 <img src="images/python.png">
+					 Python
 				   </li>
-				   <li>
-				   	<div class="progress percent85"><span>85%</span></div>
-				   	<strong>CSS3</strong>
+				   <li class="list-group-item">
+					 <img src="images/js.png">
+				   	Javascript
 				   </li>
-				   <li>
-				   	<div class="progress percent70"><span>70%</span></div>
-				   	<strong>JQuery</strong>
+					<li class="list-group-item">
+					 <img src="images/html.png">
+				   	HTML
 				   </li>
-				   <li>
-				   	<div class="progress percent95"><span>95%</span></div>
-				   	<strong>PHP</strong>
-				   </li>
-				   <li>
 
-				   	<div class="progress percent75"><span>75%</span></div>
-				   	<strong>Wordpress</strong>
-				   </li>
       
 				</ul> <!-- /skill-bars -->		
 
@@ -756,8 +750,9 @@
 	</section> <!-- /services -->	
 
 
+
 	<!-- stats Section
-   ================================================== -->
+   ================================================== 
 	<section id="stats" class="count-up">
 
 		<div class="row">
@@ -779,7 +774,7 @@
 							Projects Completed
 						</h5>
 
-					</div> <!-- /stat -->					
+					</div> 				
 
 					<div class="bgrid stat">
 
@@ -795,7 +790,7 @@
 							Happy Clients
 						</h5>
 
-					</div> <!-- /stat -->
+					</div> 
 
 					<div class="bgrid stat">
 
@@ -811,7 +806,7 @@
 							Awards Received
 						</h5>
 
-					</div> <!-- /stat -->									
+					</div> 								
 
 					<div class="bgrid stat">
 
@@ -827,7 +822,7 @@
 							Crazy Ideas
 						</h5>
 
-					</div> <!-- /stat -->
+					</div> 
 
 					<div class="bgrid stat">
 
@@ -843,7 +838,7 @@
 							Coffee Cups
 						</h5>
 
-					</div> <!-- /stat -->
+					</div>
 
 					<div class="bgrid stat">
 
@@ -859,14 +854,15 @@
 							Hours
 						</h5>
 
-					</div> <!-- /stat -->
+					</div> 
 
-				</div> <!-- /stats-list -->
+				</div> 
 
-			</div> <!-- /twelve -->
-		</div> <!-- /row -->
+			</div> 
+		</div>
 
-	</section> <!-- /stats -->
+	</section> 
+	-->
 
 	
    <!-- contact
