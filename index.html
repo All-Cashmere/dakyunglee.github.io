@@ -34,6 +34,36 @@
    <!-- favicons
 	================================================== -->
 	<link rel="icon" type="image/png" href="favicon.png">
+<style>
+
+#slider {
+	overflow: hidden;
+}
+
+@keyframes slider {
+	0% { left: 0; }
+	30% { left: 0; }
+	33% { left: -100%; }
+	63% { left: -100%; }
+	66% { left: -200%; }
+	95% { left: -200%; }
+	100% { left: 0; }
+}
+#slider figure {
+	width:300%;
+	position: relative;
+	animation: 9s slider infinite;
+}
+
+#slider figure:hover {
+	/*animation-play-state: paused; enable for pause on hover*/
+}
+#slider figure img {
+	width: 33.333333333%;
+	height : 100%;
+	float: left;
+}
+</style>
 
 </head>
 
@@ -408,7 +438,7 @@ A good motivated, fast-paced team player with the ability to learn fast. Seeking
    		<div class="col-twelve">
 
    			<h5>Portfolio</h5>
-   			<h1>Check Out Some of My Works.</h1>
+   			<h1>Check Out My Projects.</h1>
 
    			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
 
@@ -424,13 +454,13 @@ A good motivated, fast-paced team player with the ability to learn fast. Seeking
 
 	         	<div class="bgrid folio-item">
 	               <div class="item-wrap">
-	               	<img src="images/portfolio/liberty.jpg" alt="Liberty">
+	               	<img src="images/portfolio/modals/colormethis.jpg" alt="ColorMeThis">
 	                  <a href="#modal-01" class="overlay">	                  	           
 	                     <div class="folio-item-table">
 	                     	<div class="folio-item-cell">
-		     					       <h3 class="folio-title">Liberty</h3>	     					    
+		     					       <h3 class="folio-title">Color Me This</h3>	     					    
 		     					    	 <span class="folio-types">
-		     					       	  Graphic Design
+		     					       	  Capstone Project - Work In Progress
 		     					       </span>
 		     					   </div>	                      	
 	                     </div>                    
@@ -440,13 +470,13 @@ A good motivated, fast-paced team player with the ability to learn fast. Seeking
 
 	        		<div class="bgrid folio-item">
 	               <div class="item-wrap">
-	               	<img src="images/portfolio/shutterbug.jpg" alt="Shutterbug">
+	               	<img src="images/portfolio/restoguide.jpg" alt="RestoGuide">
 	               	<a href="#modal-02" class="overlay">              		                  
 	                     <div class="folio-item-table">
 	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Shutterbug</h3>	     					    
+	                     		<h3 class="folio-title">RestoGuide</h3>	     					    
 		     					    	<span class="folio-types">
-		     					       	  Web Design
+		     					       	  Android App Development
 		     					      </span>		     		
 		     					   </div> 	                      	
 	                     </div>                    
@@ -523,38 +553,41 @@ A good motivated, fast-paced team player with the ability to learn fast. Seeking
 	            <div id="modal-01" class="popup-modal slider mfp-hide">	
 
 				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-liberty.jpg" alt="" />
+				     		<img src="images/portfolio/modals/colormethis.jpg" alt="" />
 				     	</div>      	
 
 					   <div class="description-box">
-					      <h4>Liberty</h4>		      
-					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+					      <h4>Color Me This</h4>		      
+					      <p>An e-commerce web application created by four programmers in George Brown College that has a color recognition feature where a user could know their recommended foundation shade by simply uploading the image of their skin. The idea started with a common conundrum among most people who use makeup products where they have to spend so much time on just to get the right shade of the foundation for their skin tone. We are launching this web application to solve the problem. This website is developed by using Django framework.</p>
 
 					      <div class="categories">Web Development</div>			               
 					   </div>
 
 			         <div class="link-box">
-			            <a href="http://www.behance.net">Details</a>
+			            <a href="http://colormethis.pythonanywhere.com">Website Link</a>
 					      <a href="#" class="popup-modal-dismiss">Close</a>
 			         </div>		      
 
 				   </div> <!-- /modal-01 -->
 
-				   <div id="modal-02" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-shutterbug.jpg" alt="" />
-				     	</div>      	
+				   <div id="modal-02" class="popup-modal slider mfp-hide">     	
 
 					   <div class="description-box">
-					      <h4>Shutterbug</h4>		      
-					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+					      <h4>RestoGuide</h4>
+							<div id="slider">
+					  <figure>
+						    <img src="images/portfolio/2.jpg">
+						    <img src="images/portfolio/3.jpg">
+						    <img src="images/portfolio/4.jpg">
+					  </figure>
+				</div>
+					      <p>It is an android app that user could add the name of the restaurant they like. The user could also edit/ delete/ update their favorite restaurant list. When the map button is clicked, it shows the address of the said restaurant on on the google map.</p>
 
 					      <div class="categories">Web Design</div>			               
 					   </div>
 
 			         <div class="link-box">
-			            <a href="http://www.behance.net">Details</a>
+			            <a href="https://github.com/jamaecanavarrete/Resto-Guide">Source Code</a>
 					      <a href="#" class="popup-modal-dismiss">Close</a>
 			         </div>		      
 
